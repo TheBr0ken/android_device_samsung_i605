@@ -1,4 +1,4 @@
-# Copyright (C) 2013 OmniROM Project
+# Copyright (C) 2014 LiquidSmooth Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,17 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit CDMA configuration
-$(call inherit-product, vendor/omni/config/cdma.mk)
+# Release name
+PRODUCT_RELEASE_NAME := i605
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/liquid/config/common_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/i605/full_i605.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := omni_i605
+PRODUCT_NAME := liquid_i605
 PRODUCT_DEVICE := i605
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
